@@ -1,0 +1,22 @@
+{
+  "name": "ORM2FMDB",
+  "version": "0.1.0",
+  "summary": "A short description of ORM2FMDB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/it-boyer/ORM2FMDB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "it-boyer": "iTBoyer@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/it-boyer/ORM2FMDB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ORM2FMDB/Classes/**/*"
+}

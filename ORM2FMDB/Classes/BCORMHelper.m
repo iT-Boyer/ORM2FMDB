@@ -7,7 +7,7 @@
 //
 
 #import "BCORMHelper.h"
-#import "FMDB.h"
+#import <JHFoundation/JHFoundation.h>
 //#import "ORMDatabaseProtocol.h"
 #import "BCORMEntityProtocol.h"
 #import "BCSqliteType.h"
@@ -409,7 +409,7 @@
     if (![fileName isEqualToString:self.dbPath]  &&   self.dbQueue) {
         [self closeDataBase];
     }
-    self.dbPath = [PATH_OF_LIBRARY_SUPPORT stringByAppendingPathComponent:fileName];
+    self.dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:fileName];
     LogDB(@"sqlite file path:%@",self.dbPath);
     return;
 }
@@ -493,6 +493,29 @@
 /******************************************************************/
 /******************************************************************/
 
+
+-(BOOL)insert:(id<BCORMEntityProtocol>)entity
+{
+    if (!self.dbQueue) {
+        [self openDataBase];
+    }
+    if (!entity) {
+        LogDB(@"\n\nERROR----->can insert a nil obj;\n\n\r");
+        return NO;
+    }
+    __block BOOL res = NO;
+    [self.dbQueue inDatabase:^(FMDatabase *db) {
+        NSMutableDictionary *dictionaryArgs;
+        NSMutableString* insertSqlKey;
+        if ([self p_buildInsertSql_Entity:entity andKeyString:&insertSqlKey andArgs:&dictionaryArgs]) {
+            LogDB(@"save:\nSSQL:::[\n\r%@\n\r] \n args:%@",insertSqlKey,dictionaryArgs);
+            res =   [db executeUpdate:insertSqlKey withParameterDictionary:dictionaryArgs] ;
+            LOG_DB_ERROR(db);
+        }
+    }];
+    return res;
+}
+
 -(BOOL)save:(id<BCORMEntityProtocol>)entity
 {
     if (!self.dbQueue) {
@@ -512,18 +535,7 @@
         [self update:entity];
         return YES;
     }
-
-    __block BOOL res = NO;
-    [self.dbQueue inDatabase:^(FMDatabase *db) {
-        NSMutableDictionary *dictionaryArgs;
-        NSMutableString* insertSqlKey;
-        if ([self p_buildInsertSql_Entity:entity andKeyString:&insertSqlKey andArgs:&dictionaryArgs]) {
-            LogDB(@"save:\nSSQL:::[\n\r%@\n\r] \n args:%@",insertSqlKey,dictionaryArgs);
-          res =   [db executeUpdate:insertSqlKey withParameterDictionary:dictionaryArgs] ;
-         LOG_DB_ERROR(db);
-        }
-    }];
-    return res;
+    return [self insert:entity];
 }
 
 
@@ -555,19 +567,22 @@
     [classTableMapping enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) /*01*/{
         NSString* propertyName = key;
         BCSqliteType* sqlType = obj;
-        id propertyValue = [(NSObject*)entity valueForKey:propertyName];
-        LogDB(@" %@----%@---%@",propertyName,NSStringFromClass([propertyValue class]),propertyValue);
-        if (propertyValue)/*001*/ {
-            if (index < size - 1) {
-                [insertSqlKey appendFormat:@"'%@',",sqlType.name];
-                [insertSqlValue appendFormat:@":%@ ,",sqlType.name];
-                [dictionaryArgs setObject:propertyValue forKey:sqlType.name];
-            }else {
-                [insertSqlKey appendFormat:@"'%@'",sqlType.name];
-                [insertSqlValue appendFormat:@":%@ )",sqlType.name];
-                [dictionaryArgs setObject:propertyValue forKey:sqlType.name];
-            }
-        }/*001*/
+        //当自增属性时，不做插入操作
+        if (!sqlType.constraints.autoIncrement) {
+            id propertyValue = [(NSObject*)entity valueForKey:propertyName];
+            LogDB(@" %@----%@---%@",propertyName,NSStringFromClass([propertyValue class]),propertyValue);
+            if (propertyValue)/*001*/ {
+                if (index < size - 1) {
+                    [insertSqlKey appendFormat:@"'%@',",sqlType.name];
+                    [insertSqlValue appendFormat:@":%@ ,",sqlType.name];
+                    [dictionaryArgs setObject:propertyValue forKey:sqlType.name];
+                }else {
+                    [insertSqlKey appendFormat:@"'%@'",sqlType.name];
+                    [insertSqlValue appendFormat:@":%@ )",sqlType.name];
+                    [dictionaryArgs setObject:propertyValue forKey:sqlType.name];
+                }
+            }/*001*/
+        }
         index ++;
 
     }/*01*/];

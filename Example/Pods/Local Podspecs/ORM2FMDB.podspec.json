@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ORM2FMDB/Classes/**/*"
+  "source_files": "ORM2FMDB/Classes/**/*",
+  "dependencies": {
+    "FMDB": [
+      "~> 2.7.5"
+    ]
+  }
 }

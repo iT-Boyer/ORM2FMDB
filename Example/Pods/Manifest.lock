@@ -4,7 +4,11 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ORM2FMDB (0.1.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - ORM2FMDB (0.1.0):
+    - FMDB
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -13,6 +17,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - FMDB
 
 EXTERNAL SOURCES:
   ORM2FMDB:
@@ -20,8 +25,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ORM2FMDB: f6270e3309ef0ef4992c517c3186e3534a49ebe0
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  ORM2FMDB: 3c89ae0bd9268e6414d33f3b34c0fbd8e07b843e
 
 PODFILE CHECKSUM: 90bf9ce727cdeb74d4469e2619314cc6e9aa1942
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

@@ -2,7 +2,7 @@
   "name": "ORM2FMDB",
   "version": "0.1.0",
   "summary": "A short description of ORM2FMDB.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "基于原作者实现的功能，提供支持pod安装方式，新建索引文件，在开发时更方便集成到项目中。",
   "homepage": "https://github.com/it-boyer/ORM2FMDB",
   "license": {
     "type": "MIT",
@@ -19,9 +19,10 @@
     "ios": "8.0"
   },
   "source_files": "ORM2FMDB/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
     "FMDB": [
-      "~> 2.7.5"
+
     ]
   }
 }

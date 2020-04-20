@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+基于原作者实现的功能，提供支持pod安装方式，新建索引文件，在开发时更方便集成到项目中。
                        DESC
 
   s.homepage         = 'https://github.com/it-boyer/ORM2FMDB'
@@ -36,8 +36,8 @@ TODO: Add long description of the pod here.
   #   'ORM2FMDB' => ['ORM2FMDB/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'FMDB', '~> 2.7.5'
+  s.dependency 'FMDB' #, '~> 2.7.5'
   
 end

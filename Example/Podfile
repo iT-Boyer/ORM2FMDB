@@ -1,3 +1,4 @@
+workspace '../../SupervisionSel.xcworkspace'
 use_frameworks!
 
 platform :ios, '8.0'

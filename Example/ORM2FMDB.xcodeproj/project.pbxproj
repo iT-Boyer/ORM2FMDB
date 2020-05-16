@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E3EB27FF930A151E0474EBC /* Pods_ORM2FMDB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CEF85CFC06D974C4630833 /* Pods_ORM2FMDB_Tests.framework */; };
+		3ED2DB1C8B2BA8671EB5B1C7 /* Pods_ORM2FMDB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5FB1755D246047F3BF0949 /* Pods_ORM2FMDB_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,10 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15CEF85CFC06D974C4630833 /* Pods_ORM2FMDB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORM2FMDB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		263EFB8ABE01B74836B1D762 /* Pods-ORM2FMDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Example.release.xcconfig"; path = "Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example.release.xcconfig"; sourceTree = "<group>"; };
+		263EFB8ABE01B74836B1D762 /* Pods-ORM2FMDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Example.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3A65576413CCB3B812183FF0 /* Pods-ORM2FMDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Tests.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-ORM2FMDB_Tests/Pods-ORM2FMDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		44121B9F7D465EBD599CACBE /* Pods_ORM2FMDB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORM2FMDB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59335EF64AFB68D48360FE23 /* Pods-ORM2FMDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ORM2FMDB_Tests/Pods-ORM2FMDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E9CB74BF5B2AF6619D5770B /* Pods-ORM2FMDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Tests.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-ORM2FMDB_Tests/Pods-ORM2FMDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5E5FB1755D246047F3BF0949 /* Pods_ORM2FMDB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORM2FMDB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ORM2FMDB_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORM2FMDB_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,13 +61,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		65DF27578C636C7AA5EA2187 /* Pods-ORM2FMDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Tests.release.xcconfig"; path = "Target Support Files/Pods-ORM2FMDB_Tests/Pods-ORM2FMDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		902769E067863321CF077619 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		97AD88FB303FEF34C9DBDB1F /* ORM2FMDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ORM2FMDB.podspec; path = ../ORM2FMDB.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CB4A0B4C3E2E1D00ABF41724 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D49AD22395E10D346D76565B /* Pods-ORM2FMDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Example.debug.xcconfig"; path = "Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D49AD22395E10D346D76565B /* Pods-ORM2FMDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Example.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2E3EB27FF930A151E0474EBC /* Pods_ORM2FMDB_Tests.framework in Frameworks */,
+				3ED2DB1C8B2BA8671EB5B1C7 /* Pods_ORM2FMDB_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				44121B9F7D465EBD599CACBE /* Pods_ORM2FMDB_Example.framework */,
-				15CEF85CFC06D974C4630833 /* Pods_ORM2FMDB_Tests.framework */,
+				5E5FB1755D246047F3BF0949 /* Pods_ORM2FMDB_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,8 +190,8 @@
 			children = (
 				D49AD22395E10D346D76565B /* Pods-ORM2FMDB_Example.debug.xcconfig */,
 				263EFB8ABE01B74836B1D762 /* Pods-ORM2FMDB_Example.release.xcconfig */,
-				59335EF64AFB68D48360FE23 /* Pods-ORM2FMDB_Tests.debug.xcconfig */,
-				65DF27578C636C7AA5EA2187 /* Pods-ORM2FMDB_Tests.release.xcconfig */,
+				3A65576413CCB3B812183FF0 /* Pods-ORM2FMDB_Tests.debug.xcconfig */,
+				4E9CB74BF5B2AF6619D5770B /* Pods-ORM2FMDB_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -222,11 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ORM2FMDB_Tests" */;
 			buildPhases = (
-				F9F968A2374D973B00A308F5 /* [CP] Check Pods Manifest.lock */,
+				30E394D7635F37BABC277374 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				44991A45C167A64E438C2F12 /* [CP] Embed Pods Frameworks */,
+				FE34D6B986FC94AD90D7885D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +296,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		30E394D7635F37BABC277374 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ORM2FMDB_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3AD698B66B99BDCB0D403E17 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,7 +340,27 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		44991A45C167A64E438C2F12 /* [CP] Embed Pods Frameworks */ = {
+		881351B217779FBCBF239F34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB-iOS9.3/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/ORM2FMDB-iOS9.3/ORM2FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ORM2FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE34D6B986FC94AD90D7885D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -334,48 +376,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ORM2FMDB_Tests/Pods-ORM2FMDB_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		881351B217779FBCBF239F34 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/ORM2FMDB/ORM2FMDB.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ORM2FMDB.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9F968A2374D973B00A308F5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ORM2FMDB_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -544,7 +544,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59335EF64AFB68D48360FE23 /* Pods-ORM2FMDB_Tests.debug.xcconfig */;
+			baseConfigurationReference = 3A65576413CCB3B812183FF0 /* Pods-ORM2FMDB_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -569,7 +569,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65DF27578C636C7AA5EA2187 /* Pods-ORM2FMDB_Tests.release.xcconfig */;
+			baseConfigurationReference = 4E9CB74BF5B2AF6619D5770B /* Pods-ORM2FMDB_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

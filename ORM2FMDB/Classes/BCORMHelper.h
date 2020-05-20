@@ -106,4 +106,10 @@
  **/
 -(BOOL)excuteByCondition:(BCSqlParameter*)condition;
 
+/// 动态插入关键字
+/// @param key 关键字
+/// @param condition
+/// @param complete
+- (void)addSQLKey:(NSString*)key condition:(BCSqlParameter*)condition complete:(void(^)(BOOL isSuccess))complete;
+
 @end

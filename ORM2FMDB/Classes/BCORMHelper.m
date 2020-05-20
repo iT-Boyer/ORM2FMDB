@@ -1094,4 +1094,26 @@
     return NO;
 }
 
+- (void)addSQLKey:(NSString*)key  condition:(BCSqlParameter*)condition complete:(void(^)(BOOL isSuccess))complete {
+     if (!self.dbQueue) {
+         [self openDataBase];
+     }
+      Class entityClass = [condition entityClass];
+      NSString* tableName = [self p_getTableNameWithClass:entityClass];
+      [self.dbQueue inDatabase:^(FMDatabase *db) {
+        if (![db columnExists:key columnName:tableName]) {
+            NSString *altertStr=[NSString stringWithFormat:@"ALTER TABLE %@ ADD %@  TEXT",tableName,key];
+            BOOL status = [db executeUpdate:altertStr];
+            if(complete){
+                complete(status);
+            }
+        }else{
+            if(complete){
+                complete(false);
+            }
+        }
+     }];
+}
+
+
 @end

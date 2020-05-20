@@ -67,6 +67,25 @@
 		97AD88FB303FEF34C9DBDB1F /* ORM2FMDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ORM2FMDB.podspec; path = ../ORM2FMDB.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CB4A0B4C3E2E1D00ABF41724 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D49AD22395E10D346D76565B /* Pods-ORM2FMDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORM2FMDB_Example.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-ORM2FMDB_Example/Pods-ORM2FMDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F925875624751F0D0031EC3E /* BCORMEntityProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCORMEntityProtocol.h; sourceTree = "<group>"; };
+		F925875824751F0E0031EC3E /* BCSqliteType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCSqliteType.m; sourceTree = "<group>"; };
+		F925875924751F0E0031EC3E /* BCSqlInt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCSqlInt.m; sourceTree = "<group>"; };
+		F925875A24751F0E0031EC3E /* BCSqlReal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCSqlReal.m; sourceTree = "<group>"; };
+		F925875B24751F0E0031EC3E /* BCSqlText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCSqlText.m; sourceTree = "<group>"; };
+		F925875C24751F0E0031EC3E /* BCSqliteType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCSqliteType.h; sourceTree = "<group>"; };
+		F925875D24751F0E0031EC3E /* BCSqlReal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCSqlReal.h; sourceTree = "<group>"; };
+		F925875E24751F0E0031EC3E /* BCSqlInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCSqlInt.h; sourceTree = "<group>"; };
+		F925875F24751F0E0031EC3E /* BCSqlText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCSqlText.h; sourceTree = "<group>"; };
+		F925876024751F0E0031EC3E /* BCSqlParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCSqlParameter.h; sourceTree = "<group>"; };
+		F925876224751F0E0031EC3E /* BCConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCConstraints.h; sourceTree = "<group>"; };
+		F925876324751F0E0031EC3E /* BCReferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCReferences.h; sourceTree = "<group>"; };
+		F925876424751F0E0031EC3E /* BCConstraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCConstraints.m; sourceTree = "<group>"; };
+		F925876524751F0E0031EC3E /* BCReferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCReferences.m; sourceTree = "<group>"; };
+		F925876724751F0E0031EC3E /* BCORMHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCORMHelper.m; sourceTree = "<group>"; };
+		F925876824751F0E0031EC3E /* BCSqlParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCSqlParameter.m; sourceTree = "<group>"; };
+		F925876924751F0E0031EC3E /* BCDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDB.h; sourceTree = "<group>"; };
+		F925876A24751F0E0031EC3E /* BCORMHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCORMHeader.h; sourceTree = "<group>"; };
+		F925876B24751F0E0031EC3E /* BCORMHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCORMHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +197,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				F925875424751F0D0031EC3E /* ORM2FMDB */,
 				97AD88FB303FEF34C9DBDB1F /* ORM2FMDB.podspec */,
 				CB4A0B4C3E2E1D00ABF41724 /* README.md */,
 				902769E067863321CF077619 /* LICENSE */,
@@ -194,6 +214,65 @@
 				4E9CB74BF5B2AF6619D5770B /* Pods-ORM2FMDB_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F925875424751F0D0031EC3E /* ORM2FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				F925875524751F0D0031EC3E /* Classes */,
+				F925876C24751F0E0031EC3E /* Assets */,
+			);
+			name = ORM2FMDB;
+			path = ../ORM2FMDB;
+			sourceTree = "<group>";
+		};
+		F925875524751F0D0031EC3E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F925876924751F0E0031EC3E /* BCDB.h */,
+				F925875624751F0D0031EC3E /* BCORMEntityProtocol.h */,
+				F925876A24751F0E0031EC3E /* BCORMHeader.h */,
+				F925876B24751F0E0031EC3E /* BCORMHelper.h */,
+				F925876724751F0E0031EC3E /* BCORMHelper.m */,
+				F925876024751F0E0031EC3E /* BCSqlParameter.h */,
+				F925876824751F0E0031EC3E /* BCSqlParameter.m */,
+				F925876124751F0E0031EC3E /* SqliteConstraints */,
+				F925875724751F0D0031EC3E /* SqliteType */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F925875724751F0D0031EC3E /* SqliteType */ = {
+			isa = PBXGroup;
+			children = (
+				F925875E24751F0E0031EC3E /* BCSqlInt.h */,
+				F925875924751F0E0031EC3E /* BCSqlInt.m */,
+				F925875C24751F0E0031EC3E /* BCSqliteType.h */,
+				F925875824751F0E0031EC3E /* BCSqliteType.m */,
+				F925875D24751F0E0031EC3E /* BCSqlReal.h */,
+				F925875A24751F0E0031EC3E /* BCSqlReal.m */,
+				F925875F24751F0E0031EC3E /* BCSqlText.h */,
+				F925875B24751F0E0031EC3E /* BCSqlText.m */,
+			);
+			path = SqliteType;
+			sourceTree = "<group>";
+		};
+		F925876124751F0E0031EC3E /* SqliteConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				F925876224751F0E0031EC3E /* BCConstraints.h */,
+				F925876424751F0E0031EC3E /* BCConstraints.m */,
+				F925876324751F0E0031EC3E /* BCReferences.h */,
+				F925876524751F0E0031EC3E /* BCReferences.m */,
+			);
+			path = SqliteConstraints;
+			sourceTree = "<group>";
+		};
+		F925876C24751F0E0031EC3E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
